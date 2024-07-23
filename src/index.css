@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .sidebar-custom-height {
+    height: calc(100vh - 40px);
+  }
+}
+
+body{
+  background-color: #121212;
+}
