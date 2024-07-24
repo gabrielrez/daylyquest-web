@@ -9,6 +9,8 @@ module.exports = {
         'c-black': '#121212',
         'c-gray-0': '#1E1E1E',
         'c-gray-1': '#292929',
+        'c-gray-2': '#7B7B7B',
+        'c-red': '#FF4181',
       },
     },
     fontFamily: {

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = () => {
   return (
-    <div className="bg-c-gray-0 m-5 rounded-3xl text-center px-5 py-8 fixed sidebar-custom-height">
+    <div className="bg-c-gray-0 m-5 rounded-3xl text-center px-5 py-8 sidebar-custom-height">
       <h1 className="text-2xl font-poppins font-bold mb-10 text-c-base-02">
         <span className="text-c-base-01">Dayly</span>Quest
       </h1>
@@ -11,7 +11,7 @@ const Sidebar = () => {
         <li>
           <a
             href="#"
-            className="font-roboto font-normal text-white text-lg block w-60 py-4 border-2 border-c-gray-1 rounded-full"
+            className="font-roboto font-normal text-white text-lg block w-60 py-4 bg-c-gray-1 rounded-full"
           >
             Home
           </a>
@@ -19,7 +19,7 @@ const Sidebar = () => {
         <li>
           <a
             href="#"
-            className="font-roboto font-normal text-white text-lg block w-60 py-4 border-2 border-transparent rounded-full transition duration-200 ease hover:border-c-gray-1"
+            className="font-roboto font-normal text-white text-lg block w-60 py-4 rounded-full transition duration-200 ease hover:bg-c-gray-1 rounded-full"
           >
             My Profile
           </a>
@@ -27,7 +27,7 @@ const Sidebar = () => {
         <li>
           <a
             href="#"
-            className="font-roboto font-normal text-white text-lg block w-60 py-4 border-2 border-transparent rounded-full transition duration-200 ease hover:border-c-gray-1"
+            className="font-roboto font-normal text-white text-lg block w-60 py-4 rounded-full transition duration-200 ease hover:border-c-gray-1 hover:bg-c-gray-1 rounded-full"
           >
             Analytics
           </a>
@@ -35,7 +35,7 @@ const Sidebar = () => {
         <li>
           <a
             href="#"
-            className="font-roboto font-normal text-white text-lg block w-60 py-4 border-2 border-transparent rounded-full transition duration-200 ease hover:border-c-gray-1"
+            className="font-roboto font-normal text-white text-lg block w-60 py-4 rounded-full transition duration-200 ease hover:border-c-gray-1 hover:bg-c-gray-1 rounded-full"
           >
             Settings
           </a>
@@ -43,7 +43,7 @@ const Sidebar = () => {
         <li>
           <a
             href="#"
-            className="font-roboto font-normal text-white text-lg block w-60 py-4 border-2 border-transparent rounded-full transition duration-200 ease hover:border-c-gray-1"
+            className="font-roboto font-normal text-white text-lg block w-60 py-4 rounded-full transition duration-200 ease hover:border-c-gray-1 hover:bg-c-gray-1 rounded-full"
           >
             Exit
           </a>
