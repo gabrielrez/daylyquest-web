@@ -13,7 +13,7 @@ const ProfileBadge = () => {
         <img
           src="../../public/img/profile-img.jpg"
           alt="Profile"
-          className="w-14 h-14 rounded-full object-cover"
+          className="min-w-14 h-14 rounded-full object-cover"
         />
         <span className="absolute top-0 right-0 bg-c-red text-white text-base font-poppins font-semibold w-8 h-8 rounded-full transform translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
           73

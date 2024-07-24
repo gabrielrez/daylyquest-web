@@ -12,6 +12,7 @@ module.exports = {
         'c-gray-1': '#292929',
         'c-gray-2': '#7B7B7B',
         'c-red': '#FF4181',
+        'c-yellow': '#F9A825',
       },
       spacing: {
         'calc-100vw-minus-400px': 'calc(100vw - 400px)',
