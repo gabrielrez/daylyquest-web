@@ -13,9 +13,18 @@ const App = () => {
         <MyGoalsHeader />
         <section className="mt-5 mr-20">
           <ul>
-            <Item />
-            <Item />
-            <Item />
+            <Item
+              title="Study mathematics"
+              description="I need to study math every day for the entrance exam"
+            />
+            <Item
+              title="Read 10 pages"
+              description="Continue reading the book"
+            />
+            <Item
+              title="Practice drums"
+              description="Practice drums to be cool"
+            />
           </ul>
         </section>
       </main>

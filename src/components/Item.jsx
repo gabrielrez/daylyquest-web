@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileBadge from './ProfileBadge';
 
-const Item = () => {
+const Item = ({ title, description }) => {
   return (
     <li className="mt-5 px-6 py-4 flex justify-between items-center w-full bg-c-gray-0 rounded-3xl transition duration-200 ease hover:bg-c-gray-1">
       <div className="content flex items-center">
@@ -11,10 +11,10 @@ const Item = () => {
         />
         <div>
           <h3 className="text-white font-poppins font-semibold text-xl">
-            Study mathematics
+            {title}
           </h3>
           <p className="text-base font-roboto text-c-gray-2 mt-4">
-            I need to study math every day for the entrance exam
+            {description}
           </p>
         </div>
       </div>
