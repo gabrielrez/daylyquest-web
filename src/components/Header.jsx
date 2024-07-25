@@ -7,7 +7,7 @@ const Header = () => {
       <p className="text-c-gray-2 font-roboto text-base">
         Complete your goals within the set deadline to maintain your offensive!
       </p>
-      <ProfileBadge />
+      <ProfileBadge name="Cirilo" offensive="56" />
     </div>
   );
 };
