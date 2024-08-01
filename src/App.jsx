@@ -1,24 +1,12 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import MyGoalsHeader from './components/MyGoalsHeader';
-import GoalBox from './components/GoalBox';
+import Home from './pages/Home';
+import Tasks from './pages/Tasks';
+import MyProfile from './pages/MyProfile';
+import Login from './pages/Login';
+import CreateAccount from './pages/CreateAcount';
 
 const App = () => {
-  return (
-    <div className="flex space-x-20">
-      <Sidebar />
-      <main className="lg:w-calc-100vw-minus-400px w-full">
-        <Header />
-        <MyGoalsHeader />
-        <section className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-10 mr-20">
-          {['Dayly', 'Monthly', 'Yearly'].map((item, index) => (
-            <GoalBox name={item} key={index} />
-          ))}
-        </section>
-      </main>
-    </div>
-  );
+  return <CreateAccount />;
 };
 
 export default App;

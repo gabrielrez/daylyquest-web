@@ -1,10 +1,10 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import MyGoalsHeader from './components/MyGoalsHeader';
-import Item from './components/Item';
+import Sidebar from '../components/Sidebar';
+import Header from '../components/Header';
+import MyGoalsHeader from '../components/MyGoalsHeader';
+import Item from '../components/Item';
 
-const App = () => {
+const Tasks = () => {
   const goals = [
     {
       title: 'Study mathematics',
@@ -40,4 +40,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Tasks;
