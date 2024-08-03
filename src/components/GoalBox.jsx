@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const GoalBox = ({ name }) => {
+  // status false -> done
+  // status true -> pending
+  const [status, setStatus] = useState(true);
+
+  const handleStatus = () => {
+    setStatus(!status);
+  };
+
+  // Checar se está pendente ou não e chamar a função handleStatus
+
   return (
-    <div className="relative flex-grow px-6 py-5 bg-c-gray-0 inline-block rounded-3xl cursor-pointer transition duration-200 ease hover:bg-c-gray-1">
+    <div
+      onClick={handleStatus}
+      className="relative flex-grow px-6 py-5 bg-c-gray-0 inline-block rounded-3xl cursor-pointer transition duration-200 ease hover:bg-c-gray-1"
+    >
       <h3 className="text-white font-poppins font-semibold text-xl">
         {name} Goals
       </h3>
@@ -15,9 +28,11 @@ const GoalBox = ({ name }) => {
       >
         See All
       </a>
-      <span className="absolute top-0 right-0 bg-c-yellow text-white text-base font-poppins font-semibold w-8 h-8 rounded-full transform translate-x-1/2 -translate-y-1/4 flex justify-center items-center">
-        !
-      </span>
+      {status && (
+        <span className="absolute top-0 right-0 bg-c-yellow text-white text-base font-poppins font-semibold w-8 h-8 rounded-full transform translate-x-1/2 -translate-y-1/4 flex justify-center items-center">
+          !
+        </span>
+      )}
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Login from './pages/Login';
 import CreateAccount from './pages/CreateAcount';
 
 const App = () => {
-  return <CreateAccount />;
+  return <Tasks />;
 };
 
 export default App;

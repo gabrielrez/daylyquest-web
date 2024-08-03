@@ -33,7 +33,7 @@ const Login = () => {
           />
           <button
             type="submit"
-            className="bg-c-base-01 p-3 rounded-xl mt-1 font-poppins font-bold text-c-gray-0 hover:bg-c-base-01-hover"
+            className="bg-c-base-01 p-3 rounded-xl mt-1 font-poppins font-bold text-c-gray-0 transition duration-200 ease hover:bg-c-base-01-hover"
           >
             Create Account
           </button>
