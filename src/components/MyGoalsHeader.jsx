@@ -9,7 +9,7 @@ const Header = () => {
           My Goals
         </h3>
       </div>
-      <button className="bg-c-base-01 text-base text-c-gray-0 font-poppins font-semibold p-10 py-3 mr-20 rounded-full transition duration-200 ease hover:bg-c-base-01-hover hover:text-c-black">
+      <button className="bg-c-base-01 text-base text-c-gray-0 font-poppins font-semibold p-10 py-3 mr-20 rounded-full transition duration-100 ease hover:bg-c-base-01-hover hover:text-c-black">
         Create personalized goals
       </button>
     </div>

@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProfileBadge = ({ name, offensive }) => {
   return (
-    <a
-      href="#"
+    <Link
+      to="/profile"
       className="flex items-center space-x-3 mr-20 transition duration-200 ease hover:bg-c-gray-0 pl-5 rounded-3xl"
     >
       <span className="text-white text-xl font-poppins font-semibold">
@@ -19,7 +20,7 @@ const ProfileBadge = ({ name, offensive }) => {
           {offensive}
         </span>
       </div>
-    </a>
+    </Link>
   );
 };
 

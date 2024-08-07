@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const [activeItem, setActiveItem] = useState('Home');
@@ -13,18 +14,24 @@ const Sidebar = () => {
         <span className="text-c-base-01">Dayly</span>Quest
       </h1>
       <span className="block w-full h-0.5 bg-c-gray-1 my-12"></span>
-      <ul className="space-y-5">
-        {['Home', 'My Profile', 'Analytics', 'Settings', 'Exit'].map((item) => (
-          <li key={item}>
-            <a
-              href="#"
-              className={`font-roboto font-normal text-white text-lg block w-60 py-4 rounded-full transition duration-200 ease ${
-                activeItem === item ? 'bg-c-gray-1' : 'hover:bg-c-gray-1'
+      <ul className="space-y-3">
+        {[
+          { name: 'Home', path: '/' },
+          { name: 'My Profile', path: '/profile' },
+          { name: 'Analytics', path: '/analytics' },
+          { name: 'Settings', path: '/settings' },
+          { name: 'Exit', path: '/exit' },
+        ].map((item) => (
+          <li key={item.name}>
+            <Link
+              to={item.path}
+              className={`font-roboto font-normal text-white text-lg block w-60 py-4 rounded-full transition duration-100 ease ${
+                activeItem === item.name ? 'bg-c-gray-1' : 'hover:bg-c-gray-1'
               }`}
-              onClick={() => handleActive(item)}
+              onClick={() => handleActive(item.name)}
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>

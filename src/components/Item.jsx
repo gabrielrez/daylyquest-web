@@ -11,7 +11,7 @@ const Item = ({ title, description }) => {
   };
 
   return (
-    <li className="mt-5 px-6 py-6 flex justify-between items-center w-full bg-c-gray-0 rounded-3xl transition duration-200 ease hover:bg-c-gray-1">
+    <li className="mt-5 px-6 py-6 flex justify-between items-center w-full bg-c-gray-0 rounded-3xl transition duration-100 ease hover:bg-c-gray-1">
       <div className="content flex items-center">
         <img
           src="../../public/img/grabme.svg"
@@ -27,7 +27,7 @@ const Item = ({ title, description }) => {
         </div>
       </div>
       <div
-        className={`min-w-7 h-7 rounded-full border-4 transition duration-200 ease cursor-pointer hover:scale-110 ${
+        className={`min-w-7 h-7 rounded-full border-4 transition duration-100 ease cursor-pointer hover:scale-110 ${
           status ? 'bg-white border-c-gray-2' : 'bg-c-base-02 border-c-base-02'
         }`}
         onClick={handleStatus}
