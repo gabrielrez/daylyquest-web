@@ -20,7 +20,7 @@ const Sidebar = () => {
           { name: 'My Profile', path: '/profile' },
           { name: 'Analytics', path: '/analytics' },
           { name: 'Settings', path: '/settings' },
-          { name: 'Exit', path: '/exit' },
+          { name: 'Exit', path: '/create-account' },
         ].map((item) => (
           <li key={item.name}>
             <Link
